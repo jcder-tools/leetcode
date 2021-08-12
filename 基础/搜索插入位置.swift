@@ -40,7 +40,7 @@
 */
 
 /*  
-    解题思路，二分法:
+    解题思路，二分法寻找第一个大于或者等于target的元素
     let nums = [1,3,5,6], target = 5
     l = 0, r = 3, m = 1, mv = 3, t > mv, l = m + 1
     l = 1, r = 3, m = 2, mv = 5, t = mv, return m
