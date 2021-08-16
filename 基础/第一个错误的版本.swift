@@ -40,13 +40,15 @@ class VersionControl {
 
 class Solution : VersionControl {
     func firstBadVersion(_ n: Int) -> Int {
-        var l = 0
+        var l = 1
         var r = n
         while l <= r {
+            // 查找到左侧第一个非坏的版本，返回l
             if isBadVersion(l) {
                 print("return l \(isBadVersion(l))")
                 return l
             }
+            // 查找到右侧第一个不是坏的版本，返回r + 1
             if !isBadVersion(r) {
                 print("return r \(isBadVersion(r))")
                 return r + 1
